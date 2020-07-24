@@ -1,4 +1,75 @@
+/* For PC browser */
 #nav-logo{
     width: 70px;
+    
 }
+#logo-name{
+    color: rgb(193, 211, 29);
+    letter-spacing: 5px;
+    
+    
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgb(88, 3, 22);
+    font-family: Badaboom BB;
+    
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 35%;
+    
 
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    text-decoration: none;
+    color: rgb(193, 211, 29);
+}
+.burger div{
+    width: 25px;
+    height: 5px;
+    background-color: rgb(193, 211, 29);
+    margin: 5px;
+}
+.burger{
+    /* Hide The Menu */
+    /* display: none; is used to hide items on the interface */
+    display: none;
+    cursor: pointer;
+}
+/* Navigation Bar For Mobile */
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 87vh;
+        width: 20%;
+        top: 8vh;
+        background-color: rgb(88, 3, 22);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in ;
+
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+        
+    }
+    
+}
