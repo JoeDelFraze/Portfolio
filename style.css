@@ -6,9 +6,8 @@
 #logo-name{
     color: rgb(193, 211, 29);
     letter-spacing: 5px;
-    
-    
 }
+
 nav{
     display: flex;
     justify-content: space-around;
@@ -18,14 +17,14 @@ nav{
     font-family: Badaboom BB;
     
 }
+
 .nav-links{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 35%;
-    
+    width: 35%; 
+ }
 
-}
 .nav-links li{
     list-style: none;
 }
@@ -45,6 +44,28 @@ nav{
     display: none;
     cursor: pointer;
 }
+/* Assignment */
+.sec{
+    font-family: Nanotech LLC;
+}
+.sec h3{
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(165, 42, 52);
+    font-family: Nanotech LLC;
+}
+.sec ul{
+    list-style-type: square;
+}
+.morl a{
+    text-decoration: none;
+    color: brown;
+}
+.morl a:hover{
+    color: rgb(0, 58, 146);
+}
+/* Assignment */
+
 /* Navigation Bar For Mobile */
 @media screen and (max-width:768px){
     body{
@@ -64,6 +85,7 @@ nav{
         transition: transform 0.5s ease-in ;
 
     }
+
     .nav-links li{
         opacity: 0;
     }
@@ -71,5 +93,16 @@ nav{
         display: block;
         
     }
+    /* Assignment */
+    .sec{
+        font-family: Nanotech LLC;
+    }
+    .sec h3{
+        text-align: center;
+        text-transform: uppercase;
+        color: rgb(165, 42, 52);
+        font-family: Nanotech LLC;
+    }
+    /* Assignment */
     
 }
